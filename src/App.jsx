@@ -3,6 +3,7 @@ import { Analytics } from "@vercel/analytics/react"
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import RequestQuote from './pages/RequestQuote';
+import NotFound from './pages/NotFound';
 import Footer from './components/Footer';
 import './App.css'; // Ensure CSS is applied
 
@@ -15,6 +16,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/request-quote" element={<RequestQuote />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
       </div>

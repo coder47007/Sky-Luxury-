@@ -7,6 +7,7 @@ export default function AssetCard({ item }) {
                 <img
                     src={item.image}
                     alt={item.name}
+                    loading="lazy"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute top-4 right-4 bg-slate-900/90 px-3 py-1 rounded-full border border-slate-700">
@@ -16,7 +17,6 @@ export default function AssetCard({ item }) {
 
             <div className="p-6">
                 <h3 className="text-xl font-bold text-white mb-2">{item.name}</h3>
-                <p className="text-gray-400 text-sm mb-4">{item.price}</p>
 
                 <ul className="mb-6 space-y-2">
                     {item.features.map((feature, idx) => (

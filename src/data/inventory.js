@@ -1,44 +1,62 @@
 export const inventory = [
-    // JETS
     {
-        id: "jet-showcase-1",
+        id: "falcon-10x",
+        name: "Dassault Falcon 10X",
+        category: "Ultra-Long Range",
+        price: "From €18,000 / hour",
+        image: "/images/dassault-falcon-10x.jpg",
+        description: "The Falcon 10X features the largest cabin in business aviation, offering a modular layout with separate zones for living, dining, and sleeping. With advanced noise reduction technology and 360-degree views, it provides an ultra-smooth, quiet, and luxurious ride for global travel.",
+        features: ["Massive Cabin", "360° Views", "Ultra-Quiet"],
+        affiliateLink: "https://villiers.ai/"
+    },
+    {
+        id: "lineage-1000e",
+        name: "Embraer Lineage 1000E",
+        category: "VIP Airliner",
+        price: "From €16,000 / hour",
+        image: "/images/embraer-lineage-1000e.jpg",
+        description: "Based on a regional airliner, the Lineage 1000E boasts five distinct cabin zones, including a master suite with a queen-size bed and walk-in shower. It is the ultimate choice for those who equate luxury with abundance of space.",
+        features: ["5 Cabin Zones", "Master Suite", "Walk-in Shower"],
+        affiliateLink: "https://villiers.ai/"
+    },
+    {
+        id: "bbj",
+        name: "Boeing Business Jet",
+        category: "VVIP Airliner",
+        price: "From €25,000 / hour",
+        image: "/images/boeing-bbj.jpg",
+        description: "The BBJ turns commercial airliners into flying palaces. Capable of sleeping dozens and featuring amenities like gyms, offices, and full-size dining rooms, it is designed for heads of state and billionaires who refuse to compromise on comfort.",
+        features: ["Sleeps Dozens", "Full Dining Room", "Global Range"],
+        affiliateLink: "https://villiers.ai/"
+    },
+    {
+        id: "acj320neo",
+        name: "Airbus ACJ320neo",
+        category: "VVIP Airliner",
+        price: "From €22,000 / hour",
+        image: "/images/airbus-acj320neo.jpg",
+        description: "The ACJ320neo offers the widest and tallest cabin in the large business jet class. Its fully customizable interior can include private offices, lounges, and bedrooms, making it the perfect sanctuary for ultra-long-range corporate or leisure travel.",
+        features: ["Widest Cabin", "Custom Interior", "6,000+ nm Range"],
+        affiliateLink: "https://villiers.ai/"
+    },
+    {
+        id: "challenger-3500",
+        name: "Bombardier Challenger 3500",
+        category: "Super Mid-Size",
+        price: "From €9,500 / hour",
+        image: "/images/bombardier-challenger-3500.jpg",
+        description: "An ultra-modern marvel, the Challenger 3500 features the most advanced cabin in its class. With voice-controlled cabin management, wireless charging, and the industry's quietest cabin, it redefines the super mid-size experience.",
+        features: ["Voice Control", "Nuage Seats", "Class-Leading Silence"],
+        affiliateLink: "https://villiers.ai/"
+    },
+    {
+        id: "g650er",
         name: "Gulfstream G650ER",
-        category: "Ultra-Long Range Jet",
+        category: "Ultra-Long Range",
         price: "From €14,000 / hour",
         image: "/images/gulfstream-g650er.jpg",
-        description: "The Gulfstream G650ER is the gold standard of business aviation. With a range of 7,500 nautical miles, it connects New York to Tokyo non-stop. Experience an ultra-quiet cabin, 100% fresh air replenishment, and panoramic windows that flood the interior with natural light, redefining transcontinental travel.",
-        features: ["19 Passengers", "Mach 0.925", "Global Reach"],
-        affiliateLink: "https://villiers.ai/"
-    },
-    {
-        id: "jet-showcase-2",
-        name: "Bombardier Global 7500",
-        category: "Large Cabin Jet",
-        price: "From €16,500 / hour",
-        image: "/images/bombardier-global-7500.jpg",
-        description: "Experience the industry's largest and longest-range business jet. The Global 7500 features four true living spaces, including a master suite with a full-size bed and a dedicated crew suite. It offers an uncompromised blend of luxury, productivity, and rest for the most discerning travelers.",
-        features: ["Four Living Spaces", "7,700 nm Range", "Master Suite"],
-        affiliateLink: "https://villiers.ai/"
-    },
-    // YACHTS
-    {
-        id: "yacht-showcase-1",
-        name: "M/Y AMORE VERO",
-        category: "Superyacht",
-        price: "From €1,100,000 / week",
-        image: "/images/amore-vero.jpg",
-        description: "Amore Vero is an 86m Oceanco masterpiece. Winner of the World Yacht Trophies for Best Design, she features a convertible helipad/pool, a massive owner's deck, and interiors by Alberto Pinto. She represents the pinnacle of modern superyacht aviation and leisure.",
-        features: ["86m Oceanco", "Convertible Pool/Helipad", "Alberto Pinto Interior"],
-        affiliateLink: "https://villiers.ai/"
-    },
-    {
-        id: "yacht-showcase-2",
-        name: "M/Y O'PARI",
-        category: "Mega Yacht",
-        price: "From €1,350,000 / week",
-        image: "/images/my-opari.jpg",
-        description: "O'PARI is a 95-meter floating palace. This mega yacht features a helipad, a swimming pool, a spa with a heavy-duty gym, and an outdoor cinema. With accommodation for 12 guests served by a crew of 29, she offers an unparalleled level of service and amenities for the ultimate Mediterranean escape.",
-        features: ["95m Length", "Swimming Pool", "Crew of 29"],
+        description: "A favorite among global executives, the G650ER connects cities like New York and Dubai non-stop. It features a spacious cabin with 100% fresh air replenishment, panoramic windows, and high-speed Ka-band internet for seamless productivity.",
+        features: ["7,500 nm Range", "100% Fresh Air", "Panoramic Windows"],
         affiliateLink: "https://villiers.ai/"
     }
 ];

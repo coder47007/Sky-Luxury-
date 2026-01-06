@@ -29,11 +29,6 @@ export default function RequestQuote() {
                 ...prev,
                 details: `I am interested in booking the ${interest}.`
             }));
-
-            // Auto-select type based on interest
-            if (interest.toLowerCase().includes('yacht') || interest.toLowerCase().includes('amore') || interest.toLowerCase().includes('opari')) {
-                setFormData(prev => ({ ...prev, type: 'yacht' }));
-            }
         }
     }, [searchParams]);
 
@@ -44,9 +39,9 @@ export default function RequestQuote() {
 
         // REPLACE THESE WITH YOUR ACTUAL EMAILJS KEYS
         // Sign up at https://www.emailjs.com/
-        const SERVICE_ID = 'service_fci0jc1';
-        const TEMPLATE_ID = 'template_6nznvla';
-        const PUBLIC_KEY = 'zK4WawgoKwaOzradN';
+        const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+        const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+        const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
         emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY)
             .then((result) => {
@@ -103,23 +98,11 @@ export default function RequestQuote() {
                         {/* Type Selection - Hidden Input for EmailJS */}
                         <input type="hidden" name="type" value={formData.type} />
 
-                        <div className="grid grid-cols-2 gap-4">
-                            <button
-                                type="button"
-                                onClick={() => setFormData({ ...formData, type: 'jet' })}
-                                className={`p-4 flex flex-col items-center gap-3 border transition-all duration-300 ${formData.type === 'jet' ? 'border-accent bg-accent/10 text-white' : 'border-slate-700 text-gray-500 hover:border-slate-600'}`}
-                            >
+                        <div className="grid grid-cols-1 gap-4">
+                            <div className="p-4 flex flex-col items-center gap-3 border border-accent bg-accent/10 text-white">
                                 <Plane className="w-8 h-8" />
-                                <span className="uppercase tracking-widest text-sm font-bold">Private Jet</span>
-                            </button>
-                            <button
-                                type="button"
-                                onClick={() => setFormData({ ...formData, type: 'yacht' })}
-                                className={`p-4 flex flex-col items-center gap-3 border transition-all duration-300 ${formData.type === 'yacht' ? 'border-accent bg-accent/10 text-white' : 'border-slate-700 text-gray-500 hover:border-slate-600'}`}
-                            >
-                                <Anchor className="w-8 h-8" />
-                                <span className="uppercase tracking-widest text-sm font-bold">Luxury Yacht</span>
-                            </button>
+                                <span className="uppercase tracking-widest text-sm font-bold">Private Jet Charter</span>
+                            </div>
                         </div>
 
                         {/* Contact Info */}
