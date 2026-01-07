@@ -1,5 +1,6 @@
 import { ShieldCheck, CheckCircle, Clock, Lock } from 'lucide-react';
 
+// eslint-disable-next-line no-unused-vars
 const TrustItem = ({ icon: Icon, text }) => (
     <div className="flex items-center space-x-2 text-gold-500">
         <Icon className="w-6 h-6 text-accent" />
