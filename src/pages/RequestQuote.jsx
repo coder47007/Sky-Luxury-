@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useRef } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { Send, Plane, Anchor, Calendar, Users, MapPin, CheckCircle } from 'lucide-react';
 import emailjs from '@emailjs/browser';
@@ -6,31 +6,25 @@ import emailjs from '@emailjs/browser';
 export default function RequestQuote() {
     const [searchParams] = useSearchParams();
     const form = useRef();
-    const [formData, setFormData] = useState({
-        user_name: '',
-        user_email: '',
-        phone: '',
-        type: 'jet', // jet or yacht
-        departure: '',
-        destination: '',
-        date: '',
-        passengers: '',
-        details: ''
+    
+    // Initialize formData with URL params if available
+    const [formData, setFormData] = useState(() => {
+        const interest = searchParams.get('interest');
+        return {
+            user_name: '',
+            user_email: '',
+            phone: '',
+            type: 'jet', // jet or yacht
+            departure: '',
+            destination: '',
+            date: '',
+            passengers: '',
+            details: interest ? `I am interested in booking the ${interest}.` : ''
+        };
     });
     const [submitted, setSubmitted] = useState(false);
     const [sending, setSending] = useState(false);
     const [error, setError] = useState('');
-
-    useEffect(() => {
-        // Pre-fill from URL params if available
-        const interest = searchParams.get('interest');
-        if (interest) {
-            setFormData(prev => ({
-                ...prev,
-                details: `I am interested in booking the ${interest}.`
-            }));
-        }
-    }, [searchParams]);
 
     const handleSubmit = (e) => {
         e.preventDefault();
