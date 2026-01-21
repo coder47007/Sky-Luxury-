@@ -1,9 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  
+  <!-- Homepage -->
   <url>
     <loc>https://sky-sea-luxury.vercel.app/</loc>
-    <lastmod>2025-12-30</lastmod>
+    <lastmod>2026-01-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://sky-sea-luxury.vercel.app/images/dassault-falcon-10x.jpg</image:loc>
+      <image:title>Dassault Falcon 10X Ultra-Long Range Private Jet</image:title>
+      <image:caption>The largest cabin in business aviation with advanced noise reduction</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://sky-sea-luxury.vercel.app/images/embraer-lineage-1000e.jpg</image:loc>
+      <image:title>Embraer Lineage 1000E VIP Airliner</image:title>
+      <image:caption>Five distinct cabin zones with master suite and walk-in shower</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://sky-sea-luxury.vercel.app/images/boeing-bbj.jpg</image:loc>
+      <image:title>Boeing Business Jet VVIP Airliner</image:title>
+      <image:caption>Flying palace with global range for heads of state and billionaires</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://sky-sea-luxury.vercel.app/images/airbus-acj320neo.jpg</image:loc>
+      <image:title>Airbus ACJ320neo VVIP Airliner</image:title>
+      <image:caption>Widest and tallest cabin with fully customizable interior</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://sky-sea-luxury.vercel.app/images/bombardier-challenger-3500.jpg</image:loc>
+      <image:title>Bombardier Challenger 3500 Super Mid-Size Jet</image:title>
+      <image:caption>Voice-controlled cabin management with industry-leading silence</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://sky-sea-luxury.vercel.app/images/gulfstream-g650er.jpg</image:loc>
+      <image:title>Gulfstream G650ER Ultra-Long Range Jet</image:title>
+      <image:caption>7,500 nm range connecting New York to Dubai non-stop</image:caption>
+    </image:image>
   </url>
+
+  <!-- Request Quote Page -->
+  <url>
+    <loc>https://sky-sea-luxury.vercel.app/request-quote</loc>
+    <lastmod>2026-01-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
 </urlset>

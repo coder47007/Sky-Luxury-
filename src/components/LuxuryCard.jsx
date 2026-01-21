@@ -13,7 +13,7 @@ export default function LuxuryCard({ item }) {
 
                 <img
                     src={item.image}
-                    alt={item.name}
+                    alt={`${item.name} - ${item.category} private jet charter available for booking`}
                     loading="lazy"
                     className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-[1.5s] ease-in-out"
                 />

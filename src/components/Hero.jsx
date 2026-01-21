@@ -15,7 +15,7 @@ export default function Hero() {
             <div className="absolute inset-0 z-0">
                 <img
                     src="https://images.unsplash.com/photo-1540962351504-03099e0a754b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80"
-                    alt="Private Jet"
+                    alt="Luxury private jet flying above clouds - Sky & Sea Luxury exclusive charter service"
                     className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/70 to-slate-900/30"></div>
